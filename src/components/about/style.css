@@ -1,0 +1,36 @@
+.img_container {
+  width: 50%;
+  display: grid;
+  gap: 2px;
+  height: 100%;
+  grid-template-columns: repeat(5, auto);
+  grid-auto-rows: 150px 150px;
+  grid-template-areas:
+    "exterior exterior exterior kitchen kitchen"
+    "living living stairs stairs stairs";
+  position: relative;
+}
+
+.img {
+  /* height: 100%;
+  width: 100%; */
+  object-fit: cover;
+  object-position: center;
+}
+.exterior {
+  grid-area: exterior;
+}
+.kitchen {
+  grid-area: kitchen;
+}
+.living {
+  grid-area: living;
+}
+.stairs {
+  grid-area: stairs;
+}
+@media (max-width: 640px) {
+  .img_container {
+    width: 100%;
+  }
+}

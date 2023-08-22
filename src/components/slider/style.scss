@@ -1,0 +1,15 @@
+.slide_container {
+  overflow: hidden;
+  div {
+    transform: translateY(100%);
+    transition: 0.3s ease;
+    div {
+      background-color: rgba($color: #2b2d42, $alpha: 0.9);
+    }
+  }
+  &:hover {
+    div {
+      transform: translateY(0);
+    }
+  }
+}
